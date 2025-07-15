@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main(){
+	double n1,n2,result;
+	char op;
+	cout<<"Enter the 1st number:"<<endl;
+	cin>>n1;
+	cout<<"Use anyone of the following operator: '+','-','*','/'"<<endl;
+	cin>>op;
+	cout<<"Enter the 2nd number:"<<endl;
+	cin>>n2;
+	switch(op){
+	case'+':
+		result=n1+n2;
+		cout<<"result:"<<result<<endl;
+		break;
+		
+	case'-':
+		result=n1-n2;
+		cout<<"result:"<<result<<endl;
+		break;
+	
+	case'*':
+		result=n1*n2;
+		cout<<"result:"<<result<<endl;
+		break;
+
+case'/':
+if(n2==0){
+	cout<<"Error! division by zero is not allowed!"<<endl;
+}
+else{
+	result=n1/n2;
+	cout<<"result:"<<result<<endl;
+} break;
+default:
+	cout<<"Invalid operator! please use: '+','-','*','/'"<<endl;
+}
+}
+
+	
